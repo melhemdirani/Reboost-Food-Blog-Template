@@ -5,74 +5,100 @@
           box-sizing: border-box;
 }
 
-.footer__container {
-  position: fixed;
-  bottom: 0px;
+.footer_container {
+  bottom: 0;
   width: 100%;
-  background: #212529;
-  padding: 0 0 50px;
+  background: #111111;
+  overflow: hidden;
 }
 
-.footer {
+.single-footer-caption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 40px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  color: #fff;
 }
 
-.footer .footer_heading {
-  -ms-flex-preferred-size: 50%;
-      flex-basis: 50%;
-  padding: 10px 20px;
+.footer_logo {
+  display: inline-block;
+  margin: 0px 0px 30px;
+  margin-top: 30px;
 }
 
-.footer .footer_heading .content {
-  margin: 40px 0px 0 0;
+.footer-tittle h4 {
+  margin: 0px 0px 38px;
+  margin-top: 20px;
 }
 
-div.footer-logo {
-  margin: 0 0 30px;
+h4 {
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
 }
 
-.content_pera {
+p.info1 {
   color: #7C7C7C;
-  font-size: 16px;
-  padding: 20px 4px;
-  margin: 0 0 30px;
+  word-wrap: break-word;
+  margin: 0px 0px 35px;
+  font-size: 18px;
+  font-family: 'Poppins',sans-serif;
 }
 
-.footer_number h4 {
+.footer-number {
+  margin: 0px 0px 25px;
+}
+
+.footer-number h4 {
   color: #D19F68;
-  margin: 0 0 5px;
+  font-family: 'Oswald',sans-serif;
+  font-weight: 600;
   font-size: 30px;
-  font-weight: bold;
 }
 
-.footer_number span {
+.footer-number span {
   color: #fff;
 }
 
-.footer_number p {
+.footer-number p {
   color: #BDBDBD;
-  margin: 0 0 15px;
-  font-size: 19px;
 }
 
-.footer_heading h5 {
-  color: #ffffff;
-  margin: 0 0 38px;
-}
-
-.content ul li {
+.footer-tittle ul li {
+  margin: 0px 0px 15px;
+  font-family: 'Poppins',sans-serif;
   list-style-type: none;
-  margin: 0 0 15px;
 }
 
-.content ul li a {
-  text-decoration: none;
+.footer-tittle ul li a {
   color: #7C7C7C;
-  font-size: 16px;
+  text-decoration: none;
+}
+
+#newsletter-form-email {
+  background: #101720;
+  padding: 10px 20px;
+  border-color: -internal-light-dark(#767676, #858585);
+  display: inline-block;
+  text-rendering: auto;
+  border: 0;
+}
+
+#newsletter-submit {
+  color: #D19F68;
+  background-color: #0A0F17;
+  padding: 10px 20px;
+  position: absolute;
+  border: 0;
 }
 /*# sourceMappingURL=Footer.styles.css.map */
