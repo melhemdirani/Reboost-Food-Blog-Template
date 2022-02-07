@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    
+}
+.footer_container{
+    
+    bottom: 0;
+    width: 100%;
+    background:#111111;
+    overflow: hidden;
+    
+    
+}
+
+.single-footer-caption {
+    display: flex;
+    justify-content:space-between;
+    margin: 0 40px ;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.footer_logo{
+   display: inline-block;
+   margin:0px 0px 30px;
+   margin-top:30px;
+   
+}
+.footer-tittle h4{
+    margin:0px 0px 38px;
+    margin-top: 20px;
+}
+ h4{
+    color:#FFFFFF;
+    text-transform: uppercase;
+    font-size:18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    
+    
+}
+p.info1{
+    color:#7C7C7C;
+    word-wrap: break-word;
+    margin:0px 0px 35px;
+    font-size: 18px;
+    font-family: 'Poppins',sans-serif;
+}
+.footer-number {
+    margin: 0px 0px 25px;
+}
+.footer-number h4{
+    color:#D19F68;
+    font-family: 'Oswald',sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+   
+}
+.footer-number span{
+    color:#fff;
+}
+.footer-number p {
+    color:#BDBDBD;
+}
+.footer-tittle ul li {
+    margin:0px 0px 15px;
+    font-family:'Poppins',sans-serif;
+    list-style-type: none;
+}
+.footer-tittle ul li a { 
+    color:#7C7C7C;
+    text-decoration: none;
+    
+}
+#newsletter-form-email {
+    background: #101720;
+    padding:10px 20px;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    display: inline-block;
+    text-rendering: auto;
+    border:0;
+}
+
+#newsletter-submit{
+    color:#D19F68;
+    background-color: #0A0F17;
+    padding:10px 20px;
+    position: absolute;
+    border:0;
+}
+
