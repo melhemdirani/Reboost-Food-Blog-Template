@@ -1,17 +1,17 @@
 import React from "react";
-import Blog from "./components/Navbar/Blog"
-import Footer from "./components/Navbar/Footer"
+// import Blog from "./components/Navbar/Blog"
+// import Footer from "./components/Navbar/Footer"
 import Navbar from "./components/Navbar/Navbar";
-import HomePage from "./pages/HomePage/HomePage";
+// import HomePage from "./pages/HomePage/HomePage";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
         <Navbar />
-        <HomePage />
+        {/* <HomePage />
         <Blog/>
-        <Footer/>
+        <Footer/> */}
     </div>
   );
 }
