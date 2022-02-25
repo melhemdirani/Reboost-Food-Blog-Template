@@ -1,5 +1,6 @@
 import React from 'react';
-import { ImPinterest2, ImTwitter, ImDribbble, ImBehance, ImLinkedin2, ImFacebook, ImSearch,ImMenu} from 'react-icons/im'
+import {ImTwitter, ImDribbble, ImBehance, ImLinkedin2, ImFacebook, ImSearch,ImMenu} from 'react-icons/im'
+import {BsPinterest} from 'react-icons/bs'
 
 import './Navbar.styles.scss';
 import navImg from './images/nav-img.jpg'
@@ -13,7 +14,7 @@ function Navbar() {
                 <img src = {navImg} alt = 'navbarImage'/>
                 <div className='navbar-top'>
                  <div className='navbar-icons'>
-                    <ImPinterest2 style={{marginRight : '20px', marginLeft : '110px'}}/>
+                    <BsPinterest style={{marginRight : '20px', marginLeft : '110px'}}/>
                     <ImFacebook style={{ marginRight: '20px'}}/>
                     <ImTwitter style={{ marginRight: '20px' }}/>
                     <ImDribbble style={{ marginRight: '20px' }}/>
@@ -21,8 +22,8 @@ function Navbar() {
                     <ImLinkedin2 style={{ marginRight: '20px' }}/>
                 </div>
                <div className='navbar-search'>
-                   <p style = {{color : 'grey', marginRight : '14em', fontWeight : 'lighter'}}>Search</p> 
-                   <ImSearch style = {{marginRight : '1em'}}/>
+                   <input type="text" name='search' placeholder='Search' size='40' style={{ color: 'grey', fontWeight: 'lighter',marginRight : '5em', background :'transparent', paddingBottom : '10px'}}/>
+                   <ImSearch style = {{position : 'absolute', right : '6em'}}/>
                </div>
             </div>
             </div>
@@ -31,10 +32,9 @@ function Navbar() {
                     <p className='navbar-header-text-p2'>Food Blog</p> 
                </div>
                <div>
-                    <div style={{paddingLeft : '7em'}}><ImMenu /></div>
-                        
                    <ul>
-                        <li style={{ paddingLeft: '30em'}}><a href="#home">Home</a></li>
+                        <li style={{ paddingLeft: '7em' }}><a href='#none'><ImMenu/></a></li>
+                        <li style={{ paddingLeft: '20em'}}><a href="#home">Home</a></li>
                         <li><a href="#aboutus">About Us</a></li>
                         <li><a href="#pages">Pages</a></li>
                         <li><a href="#recipes">Recipes</a></li>
