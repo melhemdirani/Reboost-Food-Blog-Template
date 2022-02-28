@@ -1,3 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+$flex : flex;
+$font-family: 'Noto Sans', sans-serif;
+$primary_color : #B0C364;
+$second_color:  #989899;
+$white : white;
+
 .Header_Container{
+    display: $flex;
+    padding-top: 8em;
+    padding-left: 6em;
+    flex-wrap: nowrap;
+    font-family: $font-family;
+    img{
+        height: 18em;
+        width: 23em;
+        padding-left: 2em;
+    }
+
+    .healthy{
+        background: $white;
+        width: 18em; 
+        height: 8em;;
+        position: absolute;
+        top: 86%;
+        left: 11.5%;
+        text-align: center;
+        border: 2px solid $white;
+        outline: 2px solid $primary_color;
+        outline-offset: -15px;
+
+        &:hover{
+            background: $primary_color;
+            border: 2px solid $primary_color;
+            outline: 2px solid $white;
+            
+            h6, p{
+                color: $white;
+            }
+
+            img{
+                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+            }
+        }
+ }
+
+        h6{
+            color: $primary_color;
+            text-transform: uppercase;
+            padding-top: 2em;
+            font-weight: bold;
+        }
+
+    p{
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .organic{
+        background: $white;
+        width: 18em; 
+        height: 8em;;
+        position: absolute;
+        top: 86%;
+        left: 38.5%;
+        text-align: center;
+        border: 2px solid $white;
+        outline: 2px solid $primary_color;
+        outline-offset: -15px;  
+        
+        &:hover{
+            background: $primary_color;
+            border: 2px solid $primary_color;
+            outline: 2px solid $white;
+            
+            h6, p{
+              color: $white;
+            }
+        }
+    }
+
+    .vegetarian{
+        background: $white;
+        width: 18em; 
+        height: 8em;;
+        position: absolute;
+        top: 86%;
+        left: 66%;
+        text-align: center;
+        border: 2px solid $white;
+        outline: 2px solid $primary_color;
+        outline-offset: -15px;
+
+        &:hover{
+            background: $primary_color;
+            border: 2px solid $primary_color;
+            outline: 2px solid $white;
+            
+            h6, p{
+                color: $white;
+            }
+        }
+    }
 
 }
