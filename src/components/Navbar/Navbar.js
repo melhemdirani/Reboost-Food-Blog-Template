@@ -3,7 +3,7 @@ import {ImTwitter, ImDribbble, ImBehance, ImLinkedin2, ImFacebook, ImSearch,ImMe
 import {BsPinterest} from 'react-icons/bs'
 
 import './Navbar.styles.scss';
-import navImg from './images/nav-img.jpg'
+import navImg from '../../assets/images/nav-img.jpg'
 
 function Navbar() {
     return (
@@ -14,16 +14,17 @@ function Navbar() {
                 <img src = {navImg} alt = 'navbarImage'/>
                 <div className='navbar-top'>
                  <div className='navbar-icons'>
-                    <BsPinterest style={{marginRight : '20px', marginLeft : '110px'}}/>
-                    <ImFacebook style={{ marginRight: '20px'}}/>
-                    <ImTwitter style={{ marginRight: '20px' }}/>
-                    <ImDribbble style={{ marginRight: '20px' }}/>
-                    <ImBehance style={{ marginRight: '20px' }}/>
-                    <ImLinkedin2 style={{ marginRight: '20px' }}/>
+                    <BsPinterest id = "pinterest" />
+                    {/* mr : margin right */}
+                    <ImFacebook id = "mr" />
+                    <ImTwitter id ="mr" />
+                    <ImDribbble id = "mr" />
+                    <ImBehance id = "mr" />
+                    <ImLinkedin2 id = "mr" />
                 </div>
                <div className='navbar-search'>
-                   <input type="text" name='search' placeholder='Search' size='40' style={{ color: 'grey', fontWeight: 'lighter',marginRight : '5em', background :'transparent', paddingBottom : '10px'}}/>
-                   <ImSearch style = {{position : 'absolute', right : '6em'}}/>
+                   <input type="text" name='search' placeholder='Search' size='40' />
+                   <ImSearch id = "search" />
                </div>
             </div>
             </div>
@@ -33,14 +34,14 @@ function Navbar() {
                </div>
                <div>
                    <ul>
-                        <li style={{ paddingLeft: '3em' }}><a href='#none'><ImMenu/></a></li>
-                        <li style={{ paddingLeft: '24em'}}><a href="#home">Home</a></li>
+                        <li id = "menu" ><a href='#none'><ImMenu/></a></li>
+                        <li id = "home" ><a href="#home">Home</a></li>
                         <li><a href="#aboutus">About Us</a></li>
                         <li><a href="#pages">Pages</a></li>
                         <li><a href="#recipes">Recipes</a></li>
                         <li><a href="#blog">Blog</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li style={{ float:'right', paddingRight: '4em'}}><a href="#Login/Register" className='navbar-link-last'>Login/Register</a></li>
+                        <li id = "login" ><a href="#Login/Register" className='navbar-link-last'>Login/Register</a></li>
                    </ul>
                </div>
 

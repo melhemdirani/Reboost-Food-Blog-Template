@@ -37,6 +37,11 @@ $font-family : 'Ranga', cursive;
 input {
   outline: 0;
   border-width: 0 0 2px;
+  color: grey;
+  font-weight: lighter;
+  margin-right: 5em;
+  background: transparent;
+  padding-bottom: 10px;
 }
 input:focus {
   border-color: white;
@@ -88,4 +93,29 @@ li a:hover{
     color: $second_color;
 }
 
+#pinterest{
+  margin-right: 20px;
+  margin-left: 110px;
+}
 
+#mr{
+  margin-right: 20px;
+}
+
+#search{
+  position: absolute;
+  right: 6em;
+}
+
+#login{
+  float : right;
+  padding-right : 4em;
+}
+
+#menu{
+  padding-left: 3em;
+}
+
+#home{
+  padding-left: 24em;
+}
