@@ -33,14 +33,14 @@ function Navbar() {
                </div>
                <div>
                    <ul>
-                        <li style={{ paddingLeft: '7em' }}><a href='#none'><ImMenu/></a></li>
-                        <li style={{ paddingLeft: '20em'}}><a href="#home">Home</a></li>
+                        <li style={{ paddingLeft: '3em' }}><a href='#none'><ImMenu/></a></li>
+                        <li style={{ paddingLeft: '24em'}}><a href="#home">Home</a></li>
                         <li><a href="#aboutus">About Us</a></li>
                         <li><a href="#pages">Pages</a></li>
                         <li><a href="#recipes">Recipes</a></li>
                         <li><a href="#blog">Blog</a></li>
                         <li><a href="#contact">Contact</a></li>
-                        <li style={{ float:'right', paddingRight: '10em'}}><a href="#Login/Register" className='navbar-link-last'>Login/Register</a></li>
+                        <li style={{ float:'right', paddingRight: '4em'}}><a href="#Login/Register" className='navbar-link-last'>Login/Register</a></li>
                    </ul>
                </div>
 

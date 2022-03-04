@@ -9,22 +9,27 @@ $white : white;
 .Header_Container{
     display: $flex;
     padding-top: 8em;
-    padding-left: 6em;
+    padding-bottom: 3em;
+    padding-left: 2em;
     flex-wrap: nowrap;
     font-family: $font-family;
     img{
-        height: 18em;
-        width: 23em;
+        height: 20em;
+        width: 26em;
         padding-left: 2em;
+
+        // &:hover{
+        //     // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
+        // }
     }
 
     .healthy{
         background: $white;
-        width: 18em; 
+        width: 20em; 
         height: 8em;;
         position: absolute;
-        top: 86%;
-        left: 11.5%;
+        top: 88%;
+        left: 6.5%;
         text-align: center;
         border: 2px solid $white;
         outline: 2px solid $primary_color;
@@ -39,31 +44,30 @@ $white : white;
                 color: $white;
             }
 
-            img{
-                box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-            }
         }
  }
 
         h6{
             color: $primary_color;
             text-transform: uppercase;
-            padding-top: 2em;
+            padding-top: 3em;
             font-weight: bold;
+            font-size: 14px;
         }
 
     p{
-        font-size: 22px;
+        font-size: 24px;
         font-weight: bold;
+        line-height: 1em;
     }
 
     .organic{
         background: $white;
-        width: 18em; 
+        width: 20em; 
         height: 8em;;
         position: absolute;
-        top: 86%;
-        left: 38.5%;
+        top: 88%;
+        left: 38%;
         text-align: center;
         border: 2px solid $white;
         outline: 2px solid $primary_color;
@@ -82,11 +86,11 @@ $white : white;
 
     .vegetarian{
         background: $white;
-        width: 18em; 
+        width: 20em; 
         height: 8em;;
         position: absolute;
-        top: 86%;
-        left: 66%;
+        top: 88%;
+        left: 68.5%;
         text-align: center;
         border: 2px solid $white;
         outline: 2px solid $primary_color;
@@ -102,5 +106,4 @@ $white : white;
             }
         }
     }
-
 }
