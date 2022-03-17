@@ -2,14 +2,13 @@
 
 $primary_color : #B0C364;
 $second_color:  #787879;
-.grid-container{
+.grid-container1{
     padding-left: 4em;
     padding-right: 4em;
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 10px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
 
 img{
     height: 38em;
@@ -17,30 +16,12 @@ img{
     padding-top: 4em;
 }
 
-h3{
-    font-weight: bold;
-    &:hover{
-        color: $primary_color;
-    }
-}
-
 h5{
-    color: $primary_color;
-    text-transform: uppercase;
-    font-size: 14px;
-    line-height: 3;
     padding-top: 7em;
 }
 
-h6{
-    text-transform: uppercase;
+h5, h6 {
     line-height: 3;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-h6,p{
-    color: $second_color;
 }
 
 p{
@@ -61,4 +42,97 @@ button{
     }
 }
 
+}
+
+.grid-container2{
+    padding: 6em 4em 4em 4em;
+    display: flex;
+    // grid-template-columns: auto auto auto;
+    // grid-gap: 40px;
+
+    img{
+        height: 22em;
+        width: 22em;
+    }
+
+    .img4{
+        background: #000000;
+        overflow: hidden;
+
+        #img4 {
+            object-fit: cover;
+            opacity: 0.6;
+            height: 25em;
+            width: 18em;
+        }
+
+        span{
+            position: absolute;
+            background: #000000;
+            opacity: 0.6;
+            width: 8em;
+            height: 6em;
+            color: white;
+            text-align: center;
+            font-size: 20px;
+            left: 79%;
+            padding-top: 2.5em;
+            margin-top: 10%;
+            font-style: italic;
+        }
+
+    }
+
+    #pt{
+        padding-top: 2em;
+    }
+
+    #ptt1{
+        margin: 2em;
+    }
+
+    #ptt{
+        padding-top: 5em;
+        margin: 2em;
+    }
+
+    .sideFood{
+        padding-top: 2em;
+        display: grid;
+        grid-template-columns: auto auto;
+        img{
+            height: 6em;
+            width: 6em;
+        }
+    }
+}
+
+.grid-container1, .grid-container2 {
+    font-family: 'Roboto', sans-serif;
+    h3 {
+        font-weight: bold;
+
+        &:hover {
+            color: $primary_color;
+        }
+    }
+
+    h5 {
+        color: $primary_color;
+        text-transform: uppercase;
+        font-size: 14px;
+        line-height: 3;
+    }
+
+    h6 {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 3;
+    }
+
+    h6,
+    p {
+        color: $second_color;
+    }
 }
