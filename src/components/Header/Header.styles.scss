@@ -1,108 +1,98 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+@import "../../assets/styles/_global.scss";
 
-$flex : flex;
-$font-family: 'Noto Sans', sans-serif;
-$primary_color : #B0C364;
-$second_color:  #989899;
-$white : white;
-
-.Header_Container{
-    display: $flex;
-    padding-top: 8em;
-    padding-bottom: 3em;
-    padding-left: 2em;
-    flex-wrap: nowrap;
+.Container {
+    @include flex-center(xy, row, wrap);
     font-family: $font-family;
-    img{
+    padding: 120px 0 80px 0;
+    gap: 30px;
+ 
+    .Item {
+        position: relative;
         height: 20em;
-        width: 26em;
-        padding-left: 2em;
+        width: 23em;
+        transition: 0.2s;
 
-        // &:hover{
-        //     // box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 10px;
-        // }
-    }
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
 
-    .healthy{
-        background: $white;
-        width: 20em; 
-        height: 8em;;
-        position: absolute;
-        top: 88%;
-        left: 6.5%;
-        text-align: center;
-        border: 2px solid $white;
-        outline: 2px solid $primary_color;
-        outline-offset: -15px;
-
-        &:hover{
+        &:hover .absolute {
             background: $primary_color;
             border: 2px solid $primary_color;
-            outline: 2px solid $white;
-            
-            h6, p{
-                color: $white;
+            outline: 2px solid white;
+        }
+
+        &:hover .absolute > p {
+            color: white;
+        }
+
+        &:hover .absolute > h6 {
+            color: white;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center
+        }
+
+        .absolute {
+            @include flex-center(xy, column, nowrap);
+            user-select: none;
+            width: 19.5em;
+            height: 8.2em;
+            background: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            border: 2px solid white;
+            outline: 2px solid $primary_color;
+            outline-offset: -15px;
+            color: white;
+            transition: 0.4s;
+
+            h6 {
+                color: $primary_color;
+                text-transform: uppercase;
+                padding-top: 1em;
+                font-weight: bold;
+                font-size: 14px;
+                transition: 0.2s;
+                
+                &:hover {
+                    cursor: pointer;
+                }
             }
 
-        }
- }
+            p {
+                font-size: 24px;
+                font-weight: bold;
+                line-height: 1em;
+                color: black;
+                transition: 0.2s;
 
-        h6{
-            color: $primary_color;
-            text-transform: uppercase;
-            padding-top: 3em;
-            font-weight: bold;
-            font-size: 14px;
+                &:hover {
+                    cursor: pointer;
+                }
+            }
         }
-
-    p{
-        font-size: 24px;
-        font-weight: bold;
-        line-height: 1em;
     }
+}
 
-    .organic{
-        background: $white;
-        width: 20em; 
-        height: 8em;;
-        position: absolute;
-        top: 88%;
-        left: 38%;
-        text-align: center;
-        border: 2px solid $white;
-        outline: 2px solid $primary_color;
-        outline-offset: -15px;  
+@media (max-width: 373px) {
+    .Container {
+        width: 100%;
         
-        &:hover{
-            background: $primary_color;
-            border: 2px solid $primary_color;
-            outline: 2px solid $white;
-            
-            h6, p{
-              color: $white;
-            }
-        }
-    }
+        .Item {
+            width: 100%;
+            height: 50vh;
 
-    .vegetarian{
-        background: $white;
-        width: 20em; 
-        height: 8em;;
-        position: absolute;
-        top: 88%;
-        left: 68.5%;
-        text-align: center;
-        border: 2px solid $white;
-        outline: 2px solid $primary_color;
-        outline-offset: -15px;
-
-        &:hover{
-            background: $primary_color;
-            border: 2px solid $primary_color;
-            outline: 2px solid $white;
-            
-            h6, p{
-                color: $white;
+            .absolute {
+                width: 90vw;
             }
         }
     }

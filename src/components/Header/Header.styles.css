@@ -1,102 +1,135 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
-.Header_Container {
+.Container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 8em;
-  padding-bottom: 3em;
-  padding-left: 2em;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-family: "Noto Sans", sans-serif;
+  padding: 120px 0 80px 0;
+  gap: 30px;
 }
 
-.Header_Container img {
+.Container .Item {
+  position: relative;
   height: 20em;
-  width: 26em;
-  padding-left: 2em;
+  width: 23em;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-.Header_Container .healthy {
-  background: white;
-  width: 20em;
-  height: 8em;
-  position: absolute;
-  top: 88%;
-  left: 6.5%;
-  text-align: center;
-  border: 2px solid white;
-  outline: 2px solid #B0C364;
-  outline-offset: -15px;
+.Container .Item:hover {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.Header_Container .healthy:hover {
-  background: #B0C364;
-  border: 2px solid #B0C364;
+.Container .Item:hover .absolute {
+  background: #b0c364;
+  border: 2px solid #b0c364;
   outline: 2px solid white;
 }
 
-.Header_Container .healthy:hover h6, .Header_Container .healthy:hover p {
+.Container .Item:hover .absolute > p {
   color: white;
 }
 
-.Header_Container h6 {
-  color: #B0C364;
-  text-transform: uppercase;
-  padding-top: 3em;
-  font-weight: bold;
-  font-size: 14px;
+.Container .Item:hover .absolute > h6 {
+  color: white;
 }
 
-.Header_Container p {
+.Container .Item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.Container .Item .absolute {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 19.5em;
+  height: 8.2em;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  border: 2px solid white;
+  outline: 2px solid #b0c364;
+  outline-offset: -15px;
+  color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.Container .Item .absolute h6 {
+  color: #b0c364;
+  text-transform: uppercase;
+  padding-top: 1em;
+  font-weight: bold;
+  font-size: 14px;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.Container .Item .absolute h6:hover {
+  cursor: pointer;
+}
+
+.Container .Item .absolute p {
   font-size: 24px;
   font-weight: bold;
   line-height: 1em;
+  color: black;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-.Header_Container .organic {
-  background: white;
-  width: 20em;
-  height: 8em;
-  position: absolute;
-  top: 88%;
-  left: 38%;
-  text-align: center;
-  border: 2px solid white;
-  outline: 2px solid #B0C364;
-  outline-offset: -15px;
+.Container .Item .absolute p:hover {
+  cursor: pointer;
 }
 
-.Header_Container .organic:hover {
-  background: #B0C364;
-  border: 2px solid #B0C364;
-  outline: 2px solid white;
-}
-
-.Header_Container .organic:hover h6, .Header_Container .organic:hover p {
-  color: white;
-}
-
-.Header_Container .vegetarian {
-  background: white;
-  width: 20em;
-  height: 8em;
-  position: absolute;
-  top: 88%;
-  left: 68.5%;
-  text-align: center;
-  border: 2px solid white;
-  outline: 2px solid #B0C364;
-  outline-offset: -15px;
-}
-
-.Header_Container .vegetarian:hover {
-  background: #B0C364;
-  border: 2px solid #B0C364;
-  outline: 2px solid white;
-}
-
-.Header_Container .vegetarian:hover h6, .Header_Container .vegetarian:hover p {
-  color: white;
+@media (max-width: 373px) {
+  .Container {
+    width: 100%;
+  }
+  .Container .Item {
+    width: 100%;
+    height: 50vh;
+  }
+  .Container .Item .absolute {
+    width: 90vw;
+  }
 }
 /*# sourceMappingURL=Header.styles.css.map */
