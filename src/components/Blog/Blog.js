@@ -22,7 +22,7 @@ const Blog = () => {
     const fries = <h3>Burger with fries</h3>
     return (
         <div>
-            <div className='grid-container1'>
+            {/* <div className='grid-container1'>
                 <div>
                     <img src={img1} alt="Friends egg with ham" />
                 </div>
@@ -44,7 +44,7 @@ const Blog = () => {
                 <div>
                     <img src={img2} alt="Steak with boiled vegetables" />
                 </div>
-            </div>
+            </div> */}
 
             <div className='grid-container2'>
                 <div>

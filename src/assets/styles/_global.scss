@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+
 $font-family: "Noto Sans", sans-serif;
 $primary_color: #b0c364;
+$second_color: #787879;
 
 @mixin flex-center ($xy, $direction, $wrap) {
     display: flex;
