@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+.Header_Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 8em;
+  padding-bottom: 3em;
+  padding-left: 2em;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.Header_Container img {
+  height: 20em;
+  width: 26em;
+  padding-left: 2em;
+}
+
+.Header_Container .healthy {
+  background: white;
+  width: 20em;
+  height: 8em;
+  position: absolute;
+  top: 88%;
+  left: 6.5%;
+  text-align: center;
+  border: 2px solid white;
+  outline: 2px solid #B0C364;
+  outline-offset: -15px;
+}
+
+.Header_Container .healthy:hover {
+  background: #B0C364;
+  border: 2px solid #B0C364;
+  outline: 2px solid white;
+}
+
+.Header_Container .healthy:hover h6, .Header_Container .healthy:hover p {
+  color: white;
+}
+
+.Header_Container h6 {
+  color: #B0C364;
+  text-transform: uppercase;
+  padding-top: 3em;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.Header_Container p {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1em;
+}
+
+.Header_Container .organic {
+  background: white;
+  width: 20em;
+  height: 8em;
+  position: absolute;
+  top: 88%;
+  left: 38%;
+  text-align: center;
+  border: 2px solid white;
+  outline: 2px solid #B0C364;
+  outline-offset: -15px;
+}
+
+.Header_Container .organic:hover {
+  background: #B0C364;
+  border: 2px solid #B0C364;
+  outline: 2px solid white;
+}
+
+.Header_Container .organic:hover h6, .Header_Container .organic:hover p {
+  color: white;
+}
+
+.Header_Container .vegetarian {
+  background: white;
+  width: 20em;
+  height: 8em;
+  position: absolute;
+  top: 88%;
+  left: 68.5%;
+  text-align: center;
+  border: 2px solid white;
+  outline: 2px solid #B0C364;
+  outline-offset: -15px;
+}
+
+.Header_Container .vegetarian:hover {
+  background: #B0C364;
+  border: 2px solid #B0C364;
+  outline: 2px solid white;
+}
+
+.Header_Container .vegetarian:hover h6, .Header_Container .vegetarian:hover p {
+  color: white;
+}
+/*# sourceMappingURL=Header.styles.css.map */

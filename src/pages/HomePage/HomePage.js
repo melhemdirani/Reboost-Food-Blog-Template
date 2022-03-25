@@ -1,10 +1,10 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
-import Header from '../../sections/Header/Header';
+import Header from '../../components/Header/Header';
 import Blog from '../../components/Blog/Blog'
 
 import './HomePage.styles.scss';
-import Loader from '../../sections/loader/Loader';
+// import Loader from '../../sections/loader/Loader';
 
 
 function HomePage() {
