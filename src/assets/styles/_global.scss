@@ -1,0 +1,18 @@
+$font-family: "Noto Sans", sans-serif;
+$primary_color: #b0c364;
+
+@mixin flex-center ($xy, $direction, $wrap) {
+    display: flex;
+    @if ($xy == y) {
+        justify-content: center;
+    }
+    @else if ($xy == x) {
+        align-items: center;
+    }
+    @else {
+        justify-content: center;
+        align-items: center;
+    }
+    flex-direction: $direction;
+    flex-wrap: $wrap;
+}

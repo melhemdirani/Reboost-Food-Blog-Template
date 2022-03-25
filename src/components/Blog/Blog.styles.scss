@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 
-$primary_color : #B0C364;
-$second_color:  #787879;
-.grid-container1{
+$primary_color: #b0c364;
+$second_color: #787879;
+
+.grid-container1 {
     padding-left: 4em;
     padding-right: 4em;
     display: grid;
@@ -10,52 +11,52 @@ $second_color:  #787879;
     grid-gap: 10px;
     text-align: center;
 
-img{
-    height: 38em;
-    width: 38em;
-    padding-top: 4em;
-}
+    img {
+        height: 38em;
+        width: 38em;
+        padding-top: 4em;
+    }
 
-h5{
-    padding-top: 7em;
-}
+    h5 {
+        padding-top: 7em;
+    }
 
-h5, h6 {
-    line-height: 3;
-}
+    h5,
+    h6 {
+        line-height: 3;
+    }
 
-p{
-    padding: 0 2em 2em 2em;
-    line-height: 2;
-}
+    p {
+        padding: 0 2em 2em 2em;
+        line-height: 2;
+    }
 
-button{
-    background-color: $primary_color;
-    padding: 15px 32px;
-    text-align: center;
-    cursor: pointer;
-    border: none;
-    color: white;
+    button {
+        background-color: $primary_color;
+        padding: 15px 32px;
+        text-align: center;
+        cursor: pointer;
+        border: none;
+        color: white;
 
-    &:hover{
-        background-color: black;
+        &:hover {
+            background-color: black;
+        }
     }
 }
 
-}
-
-.grid-container2{
+.grid-container2 {
     padding: 6em 4em 4em 4em;
     display: flex;
     // grid-template-columns: auto auto auto;
     // grid-gap: 40px;
 
-    img{
+    img {
         height: 22em;
         width: 22em;
     }
 
-    .img4{
+    .img4 {
         background: #000000;
         overflow: hidden;
 
@@ -66,7 +67,7 @@ button{
             width: 18em;
         }
 
-        span{
+        span {
             position: absolute;
             background: #000000;
             opacity: 0.6;
@@ -80,35 +81,35 @@ button{
             margin-top: 10%;
             font-style: italic;
         }
-
     }
 
-    #pt{
+    #pt {
         padding-top: 2em;
     }
 
-    #ptt1{
+    #ptt1 {
         margin: 2em;
     }
 
-    #ptt{
+    #ptt {
         padding-top: 5em;
         margin: 2em;
     }
 
-    .sideFood{
+    .sideFood {
         padding-top: 2em;
         display: grid;
         grid-template-columns: auto auto;
-        img{
+        img {
             height: 6em;
             width: 6em;
         }
     }
 }
 
-.grid-container1, .grid-container2 {
-    font-family: 'Roboto', sans-serif;
+.grid-container1,
+.grid-container2 {
+    font-family: "Roboto", sans-serif;
     h3 {
         font-weight: bold;
 
