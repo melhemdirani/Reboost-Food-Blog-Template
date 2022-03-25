@@ -13,7 +13,7 @@ function HomePage() {
     return (
         <div className='HomePage_Container'>
             {/* <Loader/> */}
-            {/* <Navbar/> */}
+            <Navbar/>
             <Header/>    
             <Blog/>
                     
