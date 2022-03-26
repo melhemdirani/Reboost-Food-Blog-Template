@@ -60,7 +60,7 @@
     }
 
     .Right-Container {
-        display: grid;
+        @include grid-center(center, center);
         grid-template-rows: auto;
         row-gap: 1.6em;
 
@@ -96,7 +96,7 @@
 
             .card-right-parent {
                 display: grid;
-                grid-template-columns: 1.3fr 3fr;
+                grid-template-columns: 4.8em 3fr;
                 column-gap: 1em;
                 .left-portion {
                     img {
@@ -133,5 +133,7 @@
         display: grid;
         grid-template-rows: auto;
         row-gap: 3em;
+
+        
     }
 }
