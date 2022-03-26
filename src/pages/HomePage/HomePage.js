@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../../components/Navbar/Navbar';
 import Header from '../../components/Header/Header';
-import Blog from '../../components/Blog/Blog'
+import Blog from '../../components/Blog/NewBlog'
 
 import './HomePage.styles.scss';
 // import Loader from '../../sections/loader/Loader';
