@@ -80,11 +80,41 @@
   row-gap: 1.6em;
 }
 
-.Container .Right-Container img {
+.Container .Right-Container .abs-div {
+  position: relative;
+  background-color: black;
+}
+
+.Container .Right-Container .abs-div span {
+  position: absolute;
+  background-color: #000000;
+  opacity: 0.6;
+  width: 7em;
+  height: 6em;
+  color: white;
+  font-size: 20px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-style: italic;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Container .Right-Container .abs-div img {
   width: 16.5em;
-  height: 22em;
+  height: 23.8em;
   -o-object-fit: cover;
      object-fit: cover;
+  opacity: 0.6;
 }
 
 .Container .Right-Container .cards {

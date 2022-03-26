@@ -66,10 +66,33 @@
         grid-template-rows: auto;
         row-gap: 1.6em;
 
-        img {
-            width: 16.5em;
-            height: 22em;
-            object-fit: cover;
+        .abs-div {
+            position: relative;
+            background-color: black;
+
+            span {
+                position: absolute;
+                background-color: #000000;
+                opacity: 0.6;
+                width: 7em;
+                height: 6em;
+                color: white;
+                font-size: 20px;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-style: italic;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            img {
+                width: 16.5em;
+                height: 23.8em;
+                object-fit: cover;
+                opacity: 0.6;
+            }
         }
 
         .cards {
