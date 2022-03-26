@@ -1,9 +1,7 @@
 @import "../../assets/styles/_global.scss";
 
 .parent {
-    display: grid;
-    justify-content: center;
-    align-content: center;
+    @include grid-center(center, center);
 }
 
 .Container {
@@ -71,6 +69,8 @@
             background-color: black;
 
             span {
+                @include translate-center();
+                @include flex-center(xy, none, none);
                 position: absolute;
                 background-color: #000000;
                 opacity: 0.6;
@@ -78,13 +78,7 @@
                 height: 6em;
                 color: white;
                 font-size: 20px;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
                 font-style: italic;
-                display: flex;
-                justify-content: center;
-                align-items: center;
             }
 
             img {

@@ -4,18 +4,28 @@ $font-family: "Noto Sans", sans-serif;
 $primary_color: #b0c364;
 $second_color: #787879;
 
-@mixin flex-center ($xy, $direction, $wrap) {
+@mixin flex-center($xy, $direction, $wrap) {
     display: flex;
     @if ($xy == y) {
         justify-content: center;
-    }
-    @else if ($xy == x) {
+    } @else if ($xy == x) {
         align-items: center;
-    }
-    @else {
+    } @else {
         justify-content: center;
         align-items: center;
     }
     flex-direction: $direction;
     flex-wrap: $wrap;
+}
+
+@mixin translate-center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin grid-center($justifyContent, $alignContent) {
+    display: grid;
+    justify-content: $justifyContent;
+    align-content: $alignContent;
 }
