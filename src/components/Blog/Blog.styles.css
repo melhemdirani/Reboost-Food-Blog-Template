@@ -7,7 +7,6 @@
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding: 0 2em;
 }
 
 .Container {
@@ -16,7 +15,6 @@
 }
 
 .Container .Left-Container {
-  background: green;
   display: -ms-grid;
   display: grid;
   row-gap: 1.7em;
@@ -58,14 +56,14 @@
 .Container .Left-Container .card-left-parent .right-portion h5 {
   color: #b0c364;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 0.87em;
   line-height: 3;
   font-weight: bold;
 }
 
 .Container .Left-Container .card-left-parent .right-portion h6 {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 0.87em;
   font-weight: bold;
 }
 
@@ -75,7 +73,6 @@
 }
 
 .Container .Right-Container {
-  background: red;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -119,7 +116,7 @@
   width: 7em;
   height: 6em;
   color: white;
-  font-size: 20px;
+  font-size: 1.25em;
   font-style: italic;
 }
 
