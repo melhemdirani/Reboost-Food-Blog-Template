@@ -16,6 +16,7 @@
 }
 
 .Container .Left-Container {
+  background: green;
   display: -ms-grid;
   display: grid;
   row-gap: 1.7em;
@@ -74,6 +75,7 @@
 }
 
 .Container .Right-Container {
+  background: red;
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;

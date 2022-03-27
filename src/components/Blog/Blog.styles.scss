@@ -10,6 +10,7 @@
     max-width: 1200px;
 
     .Left-Container {
+        background: green;
         display: grid;
         row-gap: 1.7em;
 
@@ -61,6 +62,7 @@
     }
 
     .Right-Container {
+        background: red;
         @include grid-center(center, center);
         grid-template-rows: auto;
         row-gap: 1.6em;
