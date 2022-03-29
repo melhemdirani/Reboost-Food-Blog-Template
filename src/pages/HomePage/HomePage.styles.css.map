@@ -1,8 +1,9 @@
 {
     "version": 3,
-    "mappings": "",
+    "mappings": "ACAA,OAAO,CAAC,gFAAI;AACZ,OAAO,CAAC,kEAAI;ADCZ,AAAA,mBAAmB,CAAC;ECkChB,OAAO,EAAE,IAAI;EACb,eAAe,EDlCM,MAAM;ECmC3B,aAAa,EDnCgB,MAAM;CAKtC;;AAND,AAGI,mBAHe,CAGf,GAAG,CAAC;EACA,SAAS,ECCL,MAAM;CDAb",
     "sources": [
-        "HomePage.styles.scss"
+        "HomePage.styles.scss",
+        "../../assets/styles/_global.scss"
     ],
     "names": [],
     "file": "HomePage.styles.css"

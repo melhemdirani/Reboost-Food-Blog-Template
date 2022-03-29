@@ -12,7 +12,7 @@ export default function Header() {
 
     return (
         <div>
-            <div className='Container'>
+            <div className='Header_Container'>
 
                 <div className='Item'>
                     <img onMouseOver={toggleImage} src={healthyFood} alt="healthy food" />

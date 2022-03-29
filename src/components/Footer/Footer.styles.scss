@@ -1,0 +1,45 @@
+@import "../../assets/styles/_global.scss";
+
+.Footer_Container {
+    padding: 3em 0;
+    display: grid;
+
+    .text {
+        @include grid-center(start, center);
+        font-size: 0.75em;
+        color: $second-color;
+    }
+
+    .links {
+        @include grid-center(center, center);
+
+        div {
+            a {
+                margin: 0 0.8em;
+                text-decoration-thickness: 3px;
+                color: $second-color;
+                text-decoration-color: $primary-color;
+                font-family: $font-family;
+                font-size: 0.79em;
+                transition: 0.3s ease-in-out;
+                &:hover {
+                    color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .Parent {
+        grid-template-columns: 1fr 310px;
+        column-gap: 1.4em;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .Parent {
+        grid-template-rows: 1fr 1fr;
+        row-gap: 1em;
+    }
+}

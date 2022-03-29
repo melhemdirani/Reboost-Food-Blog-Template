@@ -1,0 +1,9 @@
+@import "../../assets/styles/_global.scss";
+
+.HomePage_Container {
+    @include grid-center(center, center);
+
+    div {
+        max-width: $max-width;
+    }
+}
