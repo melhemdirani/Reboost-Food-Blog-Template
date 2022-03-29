@@ -183,4 +183,11 @@
     row-gap: 3em;
   }
 }
+
+@media only screen and (max-width: 1250px) {
+  .Container {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+  }
+}
 /*# sourceMappingURL=Blog.styles.css.map */
