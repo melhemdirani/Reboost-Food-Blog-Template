@@ -5,7 +5,7 @@ import img2 from '../../assets/images/blogf2.jpg'
 import './Post.styles.scss';
 import { paragraph, best, eggsWithHam, date } from './fakeData';
 
-const Post = () => {
+export default function Post() {
     return (
         <div>
             <div className='Post_Container'>
@@ -38,4 +38,3 @@ const Post = () => {
     )
 }
 
-export default Post;                 
