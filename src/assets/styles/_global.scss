@@ -29,3 +29,9 @@ $second_color: #787879;
     justify-content: $justifyContent;
     align-content: $alignContent;
 }
+
+@mixin grid-center($justifyContent, $alignContent) {
+    display: grid;
+    justify-content: $justifyContent;
+    align-content: $alignContent;
+}

@@ -4,7 +4,7 @@ import Header from '../../components/Header/Header';
 import Blog from '../../components/Blog/Blog'
 
 import './HomePage.styles.scss';
-import Footer from '../../components/Blog/Footer/Footer';
+import Footer from '../../components/Footer/Footer';
 // import Loader from '../../sections/loader/Loader';
 
 
@@ -17,7 +17,7 @@ function HomePage() {
             {/* <Navbar/>
             <Header/>     */}
             {/* <Blog/> */}
-            <Footer /> 
+            <Footer />
         </div>
     )
 }
