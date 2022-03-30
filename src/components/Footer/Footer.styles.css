@@ -45,7 +45,7 @@
 }
 
 @media only screen and (min-width: 576px) {
-  .Parent {
+  .Footer_Container {
     -ms-grid-columns: 1fr 310px;
         grid-template-columns: 1fr 310px;
     -webkit-column-gap: 1.4em;
@@ -54,7 +54,7 @@
 }
 
 @media only screen and (max-width: 575px) {
-  .Parent {
+  .Footer_Container {
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     row-gap: 1em;

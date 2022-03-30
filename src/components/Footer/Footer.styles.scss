@@ -31,14 +31,14 @@
 }
 
 @media only screen and (min-width: 576px) {
-    .Parent {
+    .Footer_Container {
         grid-template-columns: 1fr 310px;
         column-gap: 1.4em;
     }
 }
 
 @media only screen and (max-width: 575px) {
-    .Parent {
+    .Footer_Container {
         grid-template-rows: 1fr 1fr;
         row-gap: 1em;
     }
