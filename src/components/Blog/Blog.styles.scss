@@ -1,12 +1,11 @@
 @import "../../assets/styles/_global.scss";
 
-.parent {
-    @include grid-center(center, center);
-}
+// .parent {
+//     @include grid-center(center, center);
+// }
 
 .Container {
     font-family: "Roboto", sans-serif;
-    max-width: 1200px;
 
     .Left-Container {
         display: grid;

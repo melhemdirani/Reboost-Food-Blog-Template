@@ -1,17 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
-.parent {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-}
-
 .Container {
   font-family: "Roboto", sans-serif;
-  max-width: 1200px;
 }
 
 .Container .Left-Container {

@@ -3,6 +3,7 @@
 $font-family: "Noto Sans", sans-serif;
 $primary_color: #b0c364;
 $second_color: #787879;
+$max-width: 1200px;
 
 @mixin flex-center($xy, $direction, $wrap) {
     display: flex;

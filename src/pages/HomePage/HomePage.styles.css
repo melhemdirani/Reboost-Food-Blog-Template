@@ -1,1 +1,15 @@
-/* No CSS *//*# sourceMappingURL=HomePage.styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+.HomePage_Container {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.HomePage_Container div {
+  max-width: 1200px;
+}
+/*# sourceMappingURL=HomePage.styles.css.map */
