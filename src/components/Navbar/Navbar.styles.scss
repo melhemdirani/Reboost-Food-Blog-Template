@@ -1,121 +1,178 @@
-@import url('https://fonts.googleapis.com/css2?family=Ranga&display=swap');
+@import "../../assets/styles/_global.scss";
 
-$primary_color : #B0C364;
-$second_color:  #989899;
-$position_absolute : absolute;
-$font-family : 'Ranga', cursive;
+// Header Image CSS
+.header {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%),
+    url(../../assets/images/nav-img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 7em;
+  max-width: 100%;
 
-.navbar_img {
-    background: #000000;
-    overflow: hidden;
-    width: 100%;
-    height: 7em;
-
-     img{
-       object-fit: cover;
-       opacity: 0.4;
-   }
-
-}
-
-.navbar-top{
+  .header-top {
     color: white;
-}
-.navbar-icons{
-    position: $position_absolute;
-    top: 3em;
-    left: 16px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    // Header Icons CSS
+    .header-icons {
+      margin-top: 3em;
+
+      a {
+        color: white;
+        margin-right: 20px;
+
+        .mr {
+        }
+      }
+
+      a:hover {
+        color: $primary_color;
+      }
+    }
+
+    // Searchbar CSS
+    .navbar-search {
+      margin-top: 2em;
+
+      .search-bar {
+        position: relative;
+        max-width: 24em;
+        border-bottom: 2px solid gray;
+
+        input[type="text"] {
+          border: none;
+          font-weight: lighter;
+          background: transparent;
+          padding-bottom: 0.8em;
+          padding-top: 0.5em;
+        }
+
+        input[type="text"]:focus {
+          border-color: white;
+          outline: none;
+        }
+
+        input[type="text"]::placeholder {
+          font-style: italic;
+        }
+
+        button {
+          background: transparent;
+          border: none;
+          color: white;
+        }
+      }
+    }
+  }
 }
 
-.navbar-search{
-    position: $position_absolute;
-    top: 2.5em;
-    right: 2em;
-    display: inline-flex;
-}
+// Navbar Title CSS
+.navbar-header-text {
+  max-width: 100%;
 
-input {
-  outline: 0;
-  border-width: 0 0 2px;
-  color: grey;
-  font-weight: lighter;
-  margin-right: 5em;
-  background: transparent;
-  padding-bottom: 10px;
-}
-input:focus {
-  border-color: white;
-}
-
-.navbar-header-text-p1{
-    padding-left: 4.6em;
+  .navbar-header-text-p1 {
+    text-align: center;
     font-size: 7em;
-    font-family: $font-family ;
-}
+    font-family: $font-family;
+  }
 
-.navbar-header-text-p2 {
-  position:$position_absolute;
-  top: 37%;
-  left: 52%;
-  transform: translate(-50%, -50%);
-  color: $second_color;
-  font-family: $font-family;
-  font-size: 1.5em;
-}
-
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  border: 1px solid #fff;
-  position: sticky;
-}
-
-li {
-  float: left;
-}
-
-li a {
-  text-decoration: none !important;
-  display: block;
-  color: black;
-  font-weight: 600;
-  text-align: center;
-  padding: 14px 16px;
-}
-
-li a:hover{
-  color: $primary_color;
-}
-
-.navbar-link-last{
+  .navbar-header-text-p2 {
+    text-align: center;
+    margin-top: -2.5em;
+    margin-left: 7em;
     color: $second_color;
+    font-family: $font-family;
+    font-size: 1.8em;
+  }
 }
 
-#pinterest{
-  margin-right: 20px;
-  margin-left: 110px;
+// Navbar List CSS
+.navbar {
+  display: flex;
+  justify-content: space-around;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      display: inline-block;
+      position: relative;
+      a {
+        text-decoration: none;
+        display: block;
+        color: black;
+        font-weight: 600;
+        text-align: center;
+        padding: 14px 16px;
+      }
+
+      a:hover {
+        color: $primary_color;
+        text-decoration: none;
+      }
+
+      // Dropdown Menu
+      .dropdown-menu {
+        display: none;
+
+        ul {
+          display: block;
+          margin: 10px;
+
+          li {
+            width: 150px;
+          }
+
+          li a:hover {
+            background-color: black;
+            color: white;
+          }
+        }
+      }
+    }
+
+    li:hover .dropdown-menu {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 100%;
+      background-color: $primary_color;
+    }
+  }
 }
 
-#mr{
-  margin-right: 20px;
+// media query starts
+
+@media only screen and (max-width: 674px) {
+  .navbar-icons {
+    margin-top: 0;
+  }
+  .navbar-search {
+    margin-bottom: 3em;
+  }
 }
 
-#search{
-  position: absolute;
-  right: 6em;
-}
+@media only screen and (max-width: 366px) {
+  .navbar_img .navbar-top .navbar-icons {
+    margin-top: 3em;
+    margin-left: 1em;
+  }
 
-#login{
-  float : right;
-  padding-right : 4em;
-}
+  input[type="text"] {
+    width: 12em;
+  }
 
-#menu{
-  padding-left: 3em;
-}
-
-#home{
-  padding-left: 24em;
+  .navbar-header-text .navbar-header-text-p2 {
+    text-align: center;
+    margin-top: -2.5em;
+    margin-left: 7em;
+    color: #989899;
+    font-family: "Ranga", cursive;
+    font-size: 1.2em;
+  }
 }
