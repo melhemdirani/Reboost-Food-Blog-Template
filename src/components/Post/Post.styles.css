@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+.Post_Container {
+  max-width: 100%;
+}
+
+.Post_Container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 100%;
+  margin: 5em 1em;
+}
+
+.Post_Container .row .image-container {
+  max-width: 30em;
+  max-height: 30em;
+  margin: 2em;
+}
+
+.Post_Container .row .image-container img {
+  height: 100%;
+  width: 100%;
+}
+
+.Post_Container .row .details {
+  max-width: 35em;
+  text-align: center;
+  margin: 2em;
+}
+
+.Post_Container .row button {
+  background-color: #b0c364;
+  padding: 15px 32px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  color: white;
+}
+
+.Post_Container .row button:hover {
+  background-color: black;
+}
+
+.Post_Container {
+  font-family: "Roboto", sans-serif;
+}
+
+.Post_Container h3 {
+  font-weight: bold;
+}
+
+.Post_Container h3:hover {
+  color: #b0c364;
+}
+
+.Post_Container h5 {
+  color: #b0c364;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  line-height: 3;
+}
+
+.Post_Container h6 {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+  line-height: 3;
+}
+
+.Post_Container h6,
+.Post_Container p {
+  color: #787879;
+}
+
+@media only screen and (max-width: 1200px) {
+  .Post_Container .row {
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=Post.styles.css.map */

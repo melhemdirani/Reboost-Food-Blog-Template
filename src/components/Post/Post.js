@@ -2,7 +2,7 @@ import React from 'react'
 import img1 from '../../assets/images/blogf1.jpg'
 import img2 from '../../assets/images/blogf2.jpg'
 
-import './Blog.styles.scss';
+import './Post.styles.scss';
 import { paragraph, best, eggsWithHam, date } from './fakeData';
 
 const Post = () => {
@@ -38,4 +38,4 @@ const Post = () => {
     )
 }
 
-export default Blog;                 
+export default Post;                 
