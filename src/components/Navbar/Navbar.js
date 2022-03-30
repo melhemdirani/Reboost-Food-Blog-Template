@@ -29,6 +29,8 @@ export default function Navbar() {
                     <p className='navbar-header-text-p1'>Bueno</p>
                     <p className='navbar-header-text-p2'>Food Blog</p>
                 </div>
+
+                {/* Navbar */}
                 <div className='navbar'>
                     <ul>
                         <div>
