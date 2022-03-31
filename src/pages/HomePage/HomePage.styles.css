@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ranga&display=swap");
-.HomePage_Container {
+.Homepage_Container .Parent {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -10,7 +10,7 @@
       align-content: center;
 }
 
-.HomePage_Container div {
+.Homepage_Container .Parent .max-width {
   max-width: 1200px;
 }
 /*# sourceMappingURL=HomePage.styles.css.map */

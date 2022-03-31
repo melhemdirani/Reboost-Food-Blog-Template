@@ -14,15 +14,20 @@ function HomePage() {
     // state = {loading: true}
     // if (this.state.loading) return <Loader/>
     return (
-        <div className='HomePage_Container'>
-            <div>
-                {/* <Loader /> */}
-                <Navbar />
-                <Header />
-                <Post />
-                <Blog />
-                <Gallery />
-                <Footer />
+        <div className='Homepage_Container'>
+            <Navbar />
+            <div className="Parent">
+                <div className="max-width">
+                    <Header />
+                    <Post />
+                    <Blog />
+                </div>
+            </div>
+            <Gallery />
+            <div className="Parent">
+                <div className="max-width">
+                    <Footer />
+                </div>
             </div>
         </div>
     )
