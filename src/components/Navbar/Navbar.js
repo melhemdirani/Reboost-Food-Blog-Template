@@ -7,6 +7,7 @@ export default function Navbar() {
     return (
         <div className='Navbar_Container'>
             <div className='header'>
+
                 {/* Navbar Icons */}
                 <div className='header-top'>
                     <div className='header-icons'>
@@ -28,6 +29,7 @@ export default function Navbar() {
                 </div>
             </div>
             <nav>
+                
                 {/* Navbar Title */}
                 <div className='navbar-header-text'>
                     <p className='navbar-header-text-p1'>Bueno</p>
