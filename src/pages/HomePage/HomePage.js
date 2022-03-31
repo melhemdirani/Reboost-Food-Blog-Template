@@ -6,6 +6,7 @@ import Blog from '../../components/Blog/Blog'
 import './HomePage.styles.scss';
 import Footer from '../../components/Footer/Footer';
 import Post from '../../components/Post/Post';
+import Gallery from '../../components/Gallery/Gallery';
 // import Loader from '../../sections/loader/Loader';
 
 
@@ -20,6 +21,7 @@ function HomePage() {
                 <Header />
                 <Post />
                 <Blog />
+                <Gallery />
                 <Footer />
             </div>
         </div>
