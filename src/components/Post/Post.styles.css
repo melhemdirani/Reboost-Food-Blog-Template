@@ -26,6 +26,8 @@
 .Post_Container .row .image-container img {
   height: 100%;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .Post_Container .row .details {
