@@ -9,6 +9,7 @@ export default function Post() {
     return (
         <div>
             <div className='Post_Container'>
+                {/* Row-01 */}
                 <div className="row">
                     <div className="image-container">
                         <img src={img1} alt="Friends egg with ham" />
@@ -21,6 +22,8 @@ export default function Post() {
                         <button>Read more</button>
                     </div>
                 </div>
+                
+                {/* Row-02 */}
                 <div className="row">
                     <div className="details">
                         {best}
