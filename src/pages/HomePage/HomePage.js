@@ -18,12 +18,12 @@ function HomePage() {
             <Navbar />
             <div className="Parent">
                 <div className="max-width">
-                    <Header />
+                    {/* <Header /> */}
                     <Post />
                     <Blog />
                 </div>
             </div>
-            <Gallery />
+            {/* <Gallery /> */}
             <div className="Parent">
                 <div className="max-width">
                     <Footer />
