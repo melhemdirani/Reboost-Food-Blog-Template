@@ -1,11 +1,12 @@
 @import "../../assets/styles/_global.scss";
 
 .Homepage_Container {
-    // .Parent {
-    //     @include grid-center(center, center);
 
-    //     .max-width {
-    //         max-width: $max-width;
-    //     }
-    // }
+    .Parent {
+        @include grid-center(center, center);
+
+        .child {
+            max-width: $max-width;
+        }
+    }
 }

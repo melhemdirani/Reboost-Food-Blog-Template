@@ -18,7 +18,11 @@ function HomePage() {
             <Navbar />
             <Header />
             <Post />
-            <Blog />
+            <div className='Parent'>
+                <div className="child">
+                    <Blog />
+                </div>
+            </div>
             <Gallery />
             <Footer />
         </div>
