@@ -6,7 +6,7 @@ import Blog from '../../components/Blog/Blog'
 import Footer from '../../components/Footer/Footer';
 import Post from '../../components/Post/Post';
 import Gallery from '../../components/Gallery/Gallery';
-import Loader from '../../components/Loader/Loader';
+// import Loader from '../../components/Loader/Loader';
 
 
 function HomePage() {
