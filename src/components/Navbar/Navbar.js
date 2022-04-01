@@ -9,23 +9,21 @@ export default function Navbar() {
             <div className='header'>
 
                 {/* Navbar Icons */}
-                <div className="max-width">
-                    <div className='header-top'>
-                        <div className='header-icons'>
-                            <a href="/"><BsPinterest /></a>
-                            <a href="/"><ImFacebook /></a>
-                            <a href="/"><ImTwitter /></a>
-                            <a href="/"><ImDribbble /></a>
-                            <a href="/"><ImBehance /></a>
-                            <a href="/"><ImLinkedin2 /></a>
-                        </div>
+                <div className='header-top'>
+                    <div className='header-icons'>
+                        <a href="/"><BsPinterest /></a>
+                        <a href="/"><ImFacebook /></a>
+                        <a href="/"><ImTwitter /></a>
+                        <a href="/"><ImDribbble /></a>
+                        <a href="/"><ImBehance /></a>
+                        <a href="/"><ImLinkedin2 /></a>
+                    </div>
 
-                        {/* Navbar Search */}
-                        <div className='navbar-search'>
-                            <div className='search-bar'>
-                                <input type="text" name='search' placeholder='Search' size="40" />
-                                <button id="search"><ImSearch /></button>
-                            </div>
+                    {/* Navbar Search */}
+                    <div className='navbar-search'>
+                        <div className='search-bar'>
+                            <input type="text" name='search' placeholder='Search' size="40" />
+                            <button id="search"><ImSearch /></button>
                         </div>
                     </div>
                 </div>
