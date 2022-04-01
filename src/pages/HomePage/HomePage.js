@@ -3,7 +3,6 @@ import Navbar from '../../components/Navbar/Navbar';
 import Header from '../../components/Header/Header';
 import Blog from '../../components/Blog/Blog'
 
-import './HomePage.styles.scss';
 import Footer from '../../components/Footer/Footer';
 import Post from '../../components/Post/Post';
 import Gallery from '../../components/Gallery/Gallery';
@@ -18,11 +17,7 @@ function HomePage() {
             <Navbar />
             <Header />
             <Post />
-            <div className='Parent'>
-                <div className="child">
-                    <Blog />
-                </div>
-            </div>
+            <Blog />
             <Gallery />
             <Footer />
         </div>
