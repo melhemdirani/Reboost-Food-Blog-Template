@@ -16,19 +16,11 @@ function HomePage() {
     return (
         <div className='Homepage_Container'>
             <Navbar />
-            <div className="Parent">
-                <div className="max-width">
-                    <Header />
-                    <Post />
-                    <Blog />
-                </div>
-            </div>
+            <Header />
+            <Post />
+            <Blog />
             <Gallery />
-            <div className="Parent">
-                <div className="max-width">
-                    <Footer />
-                </div>
-            </div>
+            <Footer />
         </div>
     )
 }
