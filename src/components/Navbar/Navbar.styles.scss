@@ -9,14 +9,12 @@
   background-repeat: no-repeat;
   min-height: 7em;
   max-width: 100%;
-  
+
   .header-top {
     color: white;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
-    margin: 0 3em;
-    
 
     // Header Icons CSS
     .header-icons {
@@ -147,25 +145,12 @@
 
 // media query starts
 
-@media only screen and (max-width: 850px){
-  input[type="text"] {
-    width: 12em;
-  }
-}
-
 @media only screen and (max-width: 674px) {
   .navbar-icons {
     margin-top: 0;
   }
   .navbar-search {
     margin-bottom: 3em;
-  }
-}
-
-@media only screen and (max-width: 520px){
-  .header-top{
-    display: flex;
-    justify-content: space-around !important;
   }
 }
 
@@ -186,15 +171,5 @@
     color: #989899;
     font-family: "Ranga", cursive;
     font-size: 1.2em;
-  }
-}
-
-@media only screen and (max-width: 312px){
-
-  .header svg{
-    font-size: 10px;
-  }
-  input[type="text"] {
-    width: 10em;
   }
 }
