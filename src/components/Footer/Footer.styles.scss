@@ -1,9 +1,8 @@
 @import "../../assets/styles/_global.scss";
 
 .Footer_Container {
-    padding: 3em 0;
+    padding: 3em 2em;
     display: grid;
-    min-width: 100%;
 
     .text {
         @include grid-center(start, center);

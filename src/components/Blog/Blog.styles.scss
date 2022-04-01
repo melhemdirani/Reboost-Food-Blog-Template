@@ -131,8 +131,8 @@
     }
 }
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1200px) {
     .Container {
-        transform: scale(0.8);
+        margin: 0 2em;
     }
 }
