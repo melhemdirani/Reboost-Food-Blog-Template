@@ -6,7 +6,7 @@ import Blog from '../../components/Blog/Blog'
 import Footer from '../../components/Footer/Footer';
 import Post from '../../components/Post/Post';
 import Gallery from '../../components/Gallery/Gallery';
-// import Loader from '../../sections/loader/Loader';
+import Loader from '../../components/Loader/Loader';
 
 
 function HomePage() {
@@ -14,11 +14,12 @@ function HomePage() {
     // if (this.state.loading) return <Loader/>
     return (
         <div className='Homepage_Container'>
+            {/* <Loader /> */}
             <Navbar />
             <Header />
             <Post />
             <Blog />
-            <Gallery />
+            {/* <Gallery /> */}
             <Footer />
         </div>
     )
