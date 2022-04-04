@@ -15,12 +15,12 @@ function HomePage() {
     return (
         <div className='Homepage_Container'>
             {/* <Loader /> */}
-            <Navbar />
+            {/* <Navbar />
             <Header />
             <Post />
-            <Blog />
-            {/* <Gallery /> */}
-            <Footer />
+            <Blog /> */}
+            <Gallery />
+            {/* <Footer /> */}
         </div>
     )
 }
