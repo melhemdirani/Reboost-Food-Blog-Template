@@ -3,7 +3,7 @@
 .Footer_Container {
     padding: 3em 0;
     display: grid;
-
+    
     .text {
         @include grid-center(start, center);
         font-size: 0.75em;
