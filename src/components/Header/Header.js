@@ -1,6 +1,6 @@
 import React from 'react';
-
 import './Header.styles.scss';
+
 import healthyFood from '../../assets/images/f1.jpg';
 import organicCuisine from '../../assets/images/f2.jpg';
 import vegetarianFood from '../../assets/images/f3.jpg'

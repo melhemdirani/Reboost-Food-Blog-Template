@@ -7,6 +7,8 @@ export default function Navbar() {
     return (
         <div className='Navbar_Container'>
             <div className='header'>
+
+                {/* Navbar Icons */}
                 <div className='header-top'>
                     <div className='header-icons'>
                         <a href="/"><BsPinterest /></a>
@@ -16,6 +18,8 @@ export default function Navbar() {
                         <a href="/"><ImBehance /></a>
                         <a href="/"><ImLinkedin2 /></a>
                     </div>
+
+                    {/* Navbar Search */}
                     <div className='navbar-search'>
                         <div className='search-bar'>
                             <input type="text" name='search' placeholder='Search' size="40" />
@@ -25,6 +29,8 @@ export default function Navbar() {
                 </div>
             </div>
             <nav>
+                
+                {/* Navbar Title */}
                 <div className='navbar-header-text'>
                     <p className='navbar-header-text-p1'>Bueno</p>
                     <p className='navbar-header-text-p2'>Food Blog</p>
