@@ -4,6 +4,7 @@
     
     .gallery {
         display: flex;
+        justify-content: center;
         flex-wrap: wrap;   
         .pics {
             -webkit-transition: all 350ms ease;

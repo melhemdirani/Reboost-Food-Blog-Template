@@ -1,16 +1,5 @@
 @import "../../assets/styles/_global.scss";
 
-<<<<<<< HEAD
-.Footer_Container {
-    padding: 3em 0;
-    display: grid;
-    
-    .text {
-        @include grid-center(start, center);
-        font-size: 0.75em;
-        color: $second-color;
-    }
-=======
 .max-width {
     @include grid-center(center, center);
 
@@ -18,7 +7,6 @@
         padding: 3em 2em;
         max-width: $max-width;
         display: grid;
->>>>>>> e7aad44a6b900c269c91ac24de8a1338083d67ce
 
         .text {
             @include grid-center(start, center);
