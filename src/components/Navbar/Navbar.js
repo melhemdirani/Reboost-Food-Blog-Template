@@ -54,8 +54,8 @@ export default function Navbar() {
                                 </div>
                             </li>
                             <li><a href="#recipes">Recipes</a></li>
-                            <li><a href="#blog">Blog</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="/blog">Blog</a></li>
+                            <li><a href="/contact">Contact</a></li>
                             <li id="login" ><a href="#Login/Register">Login/Register</a></li>
                         </div>
                     </ul>
