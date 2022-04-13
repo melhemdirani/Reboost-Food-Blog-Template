@@ -1,0 +1,16 @@
+@import "../../assets/styles/_global.scss";
+
+.blog-child {
+    display: flex;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    gap: 2em;
+
+    .blog-left {
+        flex: 3.2;
+    }
+
+    .blog-right {
+        flex: 1;
+    }
+}

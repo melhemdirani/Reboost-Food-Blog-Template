@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ranga&display=swap");
+.NameCard {
+  max-width: 100%;
+  min-height: 100px;
+}
+
+.NameCard section:nth-child(1) {
+  background-image: url(https://preview.colorlib.com/theme/bueno/img/core-img/xpattern.png.pagespeed.ic.ijBkbx9gqi.webp);
+  padding: 0 2.5em;
+  padding-bottom: 2em;
+}
+
+.NameCard section:nth-child(1) img {
+  max-width: 100%;
+  margin: 3em 0;
+  border-radius: 50%;
+}
+
+.NameCard section:nth-child(1) p {
+  color: #787879;
+  text-align: center;
+}
+
+.NameCard section:nth-child(2) {
+  background-color: #b0c364;
+  min-height: 3em;
+}
+/*# sourceMappingURL=NameCard.css.map */

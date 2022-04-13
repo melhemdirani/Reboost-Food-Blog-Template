@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ranga&display=swap");
+.Main-Body {
+  max-width: 100%;
+  text-align: left;
+}
+
+.Main-Body img {
+  width: 100%;
+}
+
+.Main-Body section:nth-child(2) {
+  margin: 3em 0;
+}
+
+.Main-Body h6:nth-child(1) {
+  color: #b0c364;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.Main-Body h3 {
+  line-height: 2em;
+  font-family: "Roboto", sans-serif;
+}
+
+.Main-Body h6:nth-child(3) {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #787879;
+}
+
+.Main-Body p {
+  color: #787879;
+  text-align: justify;
+}
+/*# sourceMappingURL=MainBody.css.map */
