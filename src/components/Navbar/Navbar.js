@@ -1,6 +1,7 @@
 import React from 'react';
 import { ImTwitter, ImDribbble, ImBehance, ImLinkedin2, ImFacebook, ImSearch, ImMenu } from 'react-icons/im'
 import { BsPinterest, FaSearch } from 'react-icons/bs';
+import {Link} from 'react-router-dom';
 import './Navbar.styles.scss';
 
 export default function Navbar() {

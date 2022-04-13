@@ -7,8 +7,9 @@ import {
 import "./App.css";
 
 import HomePage from "./pages/HomePage/HomePage";
-import Blog from "./pages/Blog/Blog";
 import Preloader from './components/Preloader/Preloader';
+import Blog from "./pages/Blog/Blog";
+import Contact from "./pages/Contact/Contact";
 
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
                         <Routes>
                             <Route path="/" element={<HomePage />} />
                             <Route path="/blog" element={<Blog />} />
+                            <Route path="/contact" element={<Contact />} />
                         </Routes>
                     </BrowserRouter>
             }
