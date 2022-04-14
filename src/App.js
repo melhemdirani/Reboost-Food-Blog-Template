@@ -16,14 +16,14 @@ export default function App() {
     const [isLoading, setIsLoading] = useState(true);
     useEffect(() => {
         setTimeout(() => {
-            setIsLoading(true)
+            setIsLoading(false)
         }, 2500);
     })
 
     return (
         <>
             {
-                isLoading === false ? <Preloader /> :
+                isLoading === true ? <Preloader /> :
                     <BrowserRouter>
                         <Routes>
                             <Route path="/" element={<HomePage />} />
