@@ -1,0 +1,75 @@
+@import "../../assets/styles/_global.scss";
+
+.Blog-Sidebar {
+    @include grid-center(center, center);
+    max-width: 100%;
+    grid-template-rows: auto;
+    row-gap: 1.6em;
+
+    section:nth-child(1) {
+        // top big image parent
+        position: relative;
+        background-color: black;
+        max-width: 100%;
+
+        span {
+            // 140X300
+            @include translate-center();
+            @include flex-center(xy, none, none);
+            width: 60%;
+            height: 30%;
+            position: absolute;
+            background-color: #000000;
+            opacity: 0.6;
+            color: white;
+            font-size: 1.25em;
+            font-style: italic;
+        }
+
+        img {
+            // top big image
+            width: 100%;
+            object-fit: cover;
+            opacity: 0.6;
+        }
+    }
+
+    section:nth-child(2) {
+        // below list items card parent
+        display: grid;
+        grid-template-rows: auto;
+        row-gap: 1em;
+
+        div {
+            display: grid;
+            grid-template-columns: 4.8em 3fr;
+            column-gap: 1em;
+
+            section:nth-child(1) {
+                // left img
+
+                img {
+                    width: 100%;
+                    height: 5em;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+
+            section:nth-child(2) {
+               // right texts
+               row-gap: 0;
+               text-align: left;
+
+                h3 {
+                    font-size: 1em;
+                    font-weight: bold;
+                    margin: 0;
+                }
+                h6 {
+                    font-size: 0.8em;
+                }
+            }
+        }
+    }
+}

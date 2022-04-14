@@ -1,51 +1,72 @@
 @import "../../assets/styles/_global.scss";
 
-.max-width {
-    @include grid-center(center, center);
+.Footer_Container {
+    padding: 4em 2em;
+    max-width: 1200px;
+    display: flex;
+    gap: 2em;
 
-    .Footer_Container {
-        padding: 3em 2em;
-        max-width: $max-width;
-        display: grid;
+    // COPYRIGHT
+    section:nth-child(1) {
+        font-size: 0.75em;
+        color: $second-color;
+        flex: 1;
+        text-align: left;
+    }
 
-        .text {
-            @include grid-center(start, center);
-            font-size: 0.75em;
-            color: $second-color;
-        }
-
-        .links {
-            @include grid-center(center, center);
-            min-width: 310px;
-
-            div {
-                a {
-                    margin: 0 0.8em;
-                    text-decoration-thickness: 3px;
-                    color: $second-color;
-                    text-decoration-color: $primary-color;
-                    font-family: $font-family;
-                    font-size: 0.79em;
-                    transition: 0.3s ease-in-out;
-                    &:hover {
-                        color: $primary-color;
-                    }
+    // LINKS
+    section:nth-child(2) {
+        flex: 1;
+        text-align: right;
+        
+        div {
+            a {
+                margin: 0 0.8em;
+                text-decoration-thickness: 3px;
+                color: $second-color;
+                text-decoration-color: $primary-color;
+                font-family: $font-family;
+                font-size: 0.79em;
+                transition: 0.3s ease-in-out;
+                &:hover {
+                    color: $primary-color;
                 }
             }
         }
     }
 }
 
-@media only screen and (min-width: 576px) {
+
+@media only screen and (max-width: 1199px) {
     .Footer_Container {
-        grid-template-columns: 1fr 1fr;
-        column-gap: 1.4em;
+        max-width: 992px;
     }
 }
 
-@media only screen and (max-width: 575px) {
+@media only screen and (max-width: 1199px) {
     .Footer_Container {
-        grid-template-rows: 1fr 1fr;
-        row-gap: 1em;
+        max-width: 992px;
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .Footer_Container {
+        max-width: 768px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .Footer_Container {
+        max-width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        section:nth-child(1) {
+            text-align: center;
+        }
+        section:nth-child(2) {
+            text-align: center;
+        }
     }
 }

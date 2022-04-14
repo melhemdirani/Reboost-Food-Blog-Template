@@ -33,8 +33,3 @@ $max-width: 1200px;
     align-content: $alignContent;
 }
 
-@mixin grid-center($justifyContent, $alignContent) {
-    display: grid;
-    justify-content: $justifyContent;
-    align-content: $alignContent;
-}
