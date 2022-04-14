@@ -4,6 +4,7 @@ import { AiOutlineCloseCircle } from "react-icons/ai";
 
 import './Gallery.scss';
 
+
 const Gallery = () => {
     const [model, setModel] = useState(false);
     const [tempimgSrc, setTempImgSrc] = useState('');
