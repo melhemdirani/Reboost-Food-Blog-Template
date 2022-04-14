@@ -1,12 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ranga&display=swap");
-.Footer_Container {
-  padding: 3em 0;
+.max-width {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.max-width .Footer_Container {
+  padding: 3em 2em;
+  max-width: 1200px;
   display: -ms-grid;
   display: grid;
 }
 
-.Footer_Container .text {
+.max-width .Footer_Container .text {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: start;
@@ -18,7 +29,7 @@
   color: #787879;
 }
 
-.Footer_Container .links {
+.max-width .Footer_Container .links {
   display: -ms-grid;
   display: grid;
   -webkit-box-pack: center;
@@ -26,9 +37,10 @@
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  min-width: 310px;
 }
 
-.Footer_Container .links div a {
+.max-width .Footer_Container .links div a {
   margin: 0 0.8em;
   text-decoration-thickness: 3px;
   color: #787879;
@@ -40,14 +52,14 @@
   transition: 0.3s ease-in-out;
 }
 
-.Footer_Container .links div a:hover {
+.max-width .Footer_Container .links div a:hover {
   color: #b0c364;
 }
 
 @media only screen and (min-width: 576px) {
   .Footer_Container {
-    -ms-grid-columns: 1fr 310px;
-        grid-template-columns: 1fr 310px;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     -webkit-column-gap: 1.4em;
             column-gap: 1.4em;
   }

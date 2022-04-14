@@ -1,6 +1,7 @@
 import React from 'react';
 import { ImTwitter, ImDribbble, ImBehance, ImLinkedin2, ImFacebook, ImSearch, ImMenu } from 'react-icons/im'
 import { BsPinterest, FaSearch } from 'react-icons/bs';
+import {Link} from 'react-router-dom';
 import './Navbar.styles.scss';
 
 export default function Navbar() {
@@ -54,8 +55,8 @@ export default function Navbar() {
                                 </div>
                             </li>
                             <li><a href="#recipes">Recipes</a></li>
-                            <li><a href="#blog">Blog</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="/blog">Blog</a></li>
+                            <li><a href="/contact">Contact</a></li>
                             <li id="login" ><a href="#Login/Register">Login/Register</a></li>
                         </div>
                     </ul>

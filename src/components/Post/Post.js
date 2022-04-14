@@ -5,10 +5,12 @@ import img2 from '../../assets/images/blogf2.jpg'
 import './Post.styles.scss';
 import { paragraph, best, eggsWithHam, date } from './fakeData';
 
+
 export default function Post() {
     return (
         <div>
             <div className='Post_Container'>
+
                 {/* Row-01 */}
                 <div className="row">
                     <div className="image-container">

@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,gFAAI;AACZ,OAAO,CAAC,kEAAI;ADCZ,AAAA,WAAW,CAAC;EACR,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,MAAM;EACjB,SAAS,EAAE,IAAI;EACf,GAAG,EAAE,GAAG;CASX;;AAbD,AAMI,WANO,CAMP,UAAU,CAAC;EACP,IAAI,EAAE,GAAG;CACZ;;AARL,AAUI,WAVO,CAUP,WAAW,CAAC;EACR,IAAI,EAAE,CAAC;CACV",
+    "sources": [
+        "BlogBody.scss",
+        "../../assets/styles/_global.scss"
+    ],
+    "names": [],
+    "file": "BlogBody.css"
+}
