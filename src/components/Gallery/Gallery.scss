@@ -6,12 +6,12 @@
     .gallery {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-
+      
         .pics {
             -webkit-transition: all 350ms ease;
             transition: all 350ms ease;
             cursor: pointer;
-
+          
         .images {             
                 width: 100%;
                 object-fit: cover;
@@ -36,7 +36,8 @@
     justify-content: center;
     align-items: center;
     background-color: #000000;
-    transition: opacity 0.4s ease, visibility 0.4s ease, transform 0.5s ease-in-out;
+    transition: opacity 0.4s ease, visibility 0.4s ease,
+        transform 0.5s ease-in-out;
     visibility: hidden;
     opacity: 0;
     transform: scale(0);
@@ -72,6 +73,7 @@
     color: #ffffff;
     cursor: pointer;
 }
+
 
 @media only screen and (min-width: 7681px) {
     .images {
