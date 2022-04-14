@@ -1,13 +1,14 @@
 import "./Footer.styles.scss";
 
+
 export default function Footer() {
     return (
-        <div className="max-width">
+        <center>
             <div className="Footer_Container">
-                <div className="text">
+                <section>
                     <span>Copyright ©2022 All rights reserved | This template is made with  by Colorlib</span>
-                </div>
-                <div className="links">
+                </section>
+                <section>
                     <div>
                         <a href="/">Home</a>
                         <a href="/">Recipes</a>
@@ -15,8 +16,8 @@ export default function Footer() {
                         <a href="/">Blog</a>
                         <a href="/">Contact</a>
                     </div>
-                </div>
+                </section>
             </div>
-        </div>
+        </center>
     );
 }
