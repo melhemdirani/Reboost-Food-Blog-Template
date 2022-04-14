@@ -8,7 +8,7 @@ import SideBar from "./SideBar";
 export default function BlogBody() {
     return (
         <center>
-            <div className="blog-child">
+            <div className="BlogBody">
                 <section className="blog-left">
                     <MainBody />
                 </section>
