@@ -1,3 +1,6 @@
+import { BsPinterest } from 'react-icons/bs';
+import {ImFacebook} from 'react-icons/im';
+import {BsTwitter} from 'react-icons/bs';
 import "./NameCard.scss";
 
 
@@ -10,9 +13,9 @@ export default function NameCard() {
                 <p>My name is <span>Jessica Smith</span>,<br />I'm passionate cook with a love for vegan food.</p>
             </section>
             <section>
-
-                <i class="fa-brands fa-pinterest"></i>
-
+                <BsPinterest />
+                <ImFacebook />
+                <BsTwitter />
             </section>
         </div>
     );

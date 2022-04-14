@@ -22,7 +22,10 @@
     }
 
     section:nth-child(2) {
+        @include flex-center(xy, center, center);
+        gap: 2em;
         background-color: $primary-color;
         min-height: 3em;
+        color: white;
     }
 }
