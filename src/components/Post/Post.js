@@ -8,11 +8,11 @@ import { paragraph, best, eggsWithHam, date } from './fakeData';
 
 export default function Post() {
     return (
-        <div>
+        <center>
             <div className='Post_Container'>
 
                 {/* Row-01 */}
-                <div className="row">
+                <section>
                     <div className="image-container">
                         <img src={img1} alt="Friends egg with ham" />
                     </div>
@@ -23,10 +23,10 @@ export default function Post() {
                         {paragraph}
                         <button>Read more</button>
                     </div>
-                </div>
+                </section>
                 
                 {/* Row-02 */}
-                <div className="row">
+                <section>
                     <div className="details">
                         {best}
                         <h3>Steak with boiled vegetables</h3>
@@ -37,9 +37,9 @@ export default function Post() {
                     <div className="image-container">
                         <img src={img2} alt="Steak with boiled vegetables" />
                     </div>
-                </div>
+                </section>
             </div>
-        </div>
+        </center>
     )
 }
 
