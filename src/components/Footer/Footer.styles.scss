@@ -1,11 +1,10 @@
 @import "../../assets/styles/_global.scss";
 
 .Footer_Container {
-    padding: 0 2em;
+    padding: 4em 2em;
     max-width: 1200px;
     display: flex;
     gap: 2em;
-    margin-bottom: $margin-bottom;
 
     // COPYRIGHT
     section:nth-child(1) {
