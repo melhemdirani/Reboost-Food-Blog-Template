@@ -2,15 +2,19 @@
 @import "../../assets/styles/_global.scss";
 
 .Header_Container {
-    @include flex-center(xy, row, wrap);
     font-family: $font-family;
-    padding: 120px 0 80px 0;
-    gap: 3em;
+    max-width: 1200px;
+    padding: 0 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin-bottom: $margin-bottom;
  
-    .Item {
+    main {
+        flex: 1;
         position: relative;
         height: 20em;
-        width: 23em;
+        max-width: 100%;
         transition: 0.2s;
 
         &:hover {
@@ -41,13 +45,11 @@
         .absolute {
             @include flex-center(xy, column, nowrap);
             user-select: none;
-            width: 19.5em;
+            width: 80%;
             height: 8.2em;
             background: white;
             position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            @include translate-center;
             text-align: center;
             border: 2px solid white;
             outline: 2px solid $primary_color;
@@ -87,7 +89,7 @@
     .Header_Container {
         width: 100%;
         
-        .Item {
+        main {
             width: 80%;
             height: 30vh;
 

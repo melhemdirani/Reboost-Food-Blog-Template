@@ -6,6 +6,7 @@ $logo-font: "Ranga", cursive;
 $primary_color: #b0c364;
 $second_color: #787879;
 $max-width: 1200px;
+$margin-bottom: 6em;
 
 @mixin flex-center($xy, $direction, $wrap) {
     display: flex;
