@@ -1,0 +1,114 @@
+@import "../../assets/styles/global.scss";
+
+.Blog-Message-Container {
+    max-width: 100%;
+
+    .message-inner-section {
+        width: 75%;
+
+        h3 {
+            padding: 10px 15px;
+            margin: 5px 10px;
+        }
+
+        // -------------- FORM Start ---------------//
+
+        .name-email {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 15px;
+
+            .name {
+                grid-column: 1/2;
+            }
+
+            .email {
+                grid-column: 2/-1;
+            }
+
+            input[type="text"] {
+                width: 100%;
+                border: 1px solid rgb(0, 0, 0);
+                padding: 10px 15px;
+                margin: 5px 10px;
+            }
+            input[type="email"] {
+                width: 100%;
+                border: 1px solid rgb(0, 0, 0);
+                padding: 10px 15px;
+                margin: 5px 10px;
+            }
+        }
+
+        input[type="url"],
+        textarea {
+            width: 100%;
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px 15px;
+            margin: 5px 10px;
+        }
+
+        button {
+            padding: 10px 35px;
+            margin: 5px 10px;
+            background-color: $primary_color;
+            border: none;
+            color: white;
+            transition: background-color 1s ease;
+        }
+
+        button:hover {
+            background-color: black;
+        }
+    }
+}
+
+@media only screen and (max-width: 1104px) {
+    .name-email {
+        grid-template-columns: 1fr;
+    }
+
+    .name {
+        grid-column: 1/-1 !important;
+    }
+
+    .email {
+        grid-column: 1/-1 !important;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .form {
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 336px) {
+    .message-inner-section {
+        h3 {
+            font-size: 1.2em;
+        }
+    }
+}
+
+@media only screen and (max-width: 330px) {
+    .message-submit-button {
+        button {
+            padding: 8px 20px;
+            margin: 3px 8px;
+            font-size: 0.82em;
+        }
+    }
+}
+
+@media only screen and (max-width: 296px) {
+    .message-submit-button {
+        button {
+            padding: 0px 0px;
+            margin: 0px 0px;
+            font-size: 0.8em;
+        }
+    }
+}

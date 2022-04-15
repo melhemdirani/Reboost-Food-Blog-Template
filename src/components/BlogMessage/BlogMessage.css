@@ -1,0 +1,39 @@
+.Blog-Message-Container {
+  max-width: 100%;
+  margin: 50px 0px;
+  padding: 30px 0;
+}
+
+.Blog-Message-Container form {
+  max-width: 100%;
+}
+
+.Blog-Message-Container form .name-email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.Blog-Message-Container form .name-email input[type="text"],
+.Blog-Message-Container form .name-email input[type="email"] {
+  max-width: 30em;
+  border: 1px solid black;
+  padding: 10px 15px;
+  margin: 5px 10px;
+}
+
+.Blog-Message-Container form input[type="text"], .Blog-Message-Container form textarea {
+  max-width: 61.3em;
+  border: 1px solid black;
+  padding: 10px 15px;
+  margin: 5px 10px;
+}
+
+@media only screen and (max-width: 1000) {
+  input[type="text"], input[type="email"], textarea {
+    max-width: 30em;
+  }
+}
+/*# sourceMappingURL=BlogMessage.css.map */

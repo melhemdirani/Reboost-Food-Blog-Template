@@ -1,0 +1,53 @@
+@import "../../assets/styles/global.scss";
+
+.searchContainer {
+    background-color: lightgray;
+    max-width: 100%;
+
+    .innerContainer {
+        max-width: 1200px;
+        min-height: 200px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+
+        input[type="search"] {
+            min-width: 16em;
+            border: 1px solid white;
+            padding: 10px 15px;
+            margin: 5px 10px;
+        }
+
+        textarea:focus,
+        input:focus {
+            outline: none;
+        }
+
+        button {
+            min-width: 16em;
+            padding: 10px 0;
+            background-color: $primary_color;
+            border: none;
+            color: white;
+            transition: background-color 1s ease;
+            margin: 5px 10px;
+        }
+
+        button:hover {
+            background-color: black;
+        }
+    }
+}
+
+@media only screen and (max-width: 532px) {
+    .innerContainer {
+        padding: 20px 0px;
+    }
+}
+
+@media only screen and (max-width: 1103px){
+    .innerContainer {
+        padding: 30px 0px;
+    }
+}

@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ranga&display=swap");
+.searchContainer {
+  background-color: lightgray;
+  min-height: 150px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.searchContainer .innerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1200px;
+  background-color: red;
+  padding: 10px;
+}
+
+.searchContainer .search1,
+.searchContainer .search2,
+.searchContainer .search3,
+.searchContainer .searchbtn {
+  max-width: 17em;
+  position: relative;
+}
+
+.searchContainer .search1 input[type="search"],
+.searchContainer .search2 input[type="search"],
+.searchContainer .search3 input[type="search"],
+.searchContainer .searchbtn input[type="search"] {
+  width: 100%;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.searchContainer .search1 button,
+.searchContainer .search2 button,
+.searchContainer .search3 button,
+.searchContainer .searchbtn button {
+  width: 100%;
+}
+/*# sourceMappingURL=SearchSection.css.map */
