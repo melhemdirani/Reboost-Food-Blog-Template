@@ -13,7 +13,7 @@ export default function Blog() {
             <Navbar />
             <SearchSection />
             <BlogBody />
-            {/* <BlogComment /> */}
+            <BlogComment />
             <BlogMessage />
             {/* <Gallery />
             <Footer /> */}

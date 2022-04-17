@@ -1,0 +1,60 @@
+@import "../../assets/styles/global.scss";
+
+.Comments {
+    padding: 30px 40px;
+    width: 100%;
+
+    h1 {
+        color: #272727;
+        font-size: 24px;
+        font-family: "Montseratt", sans-serif;
+    }
+
+    .comment-max-width {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .second-comment {
+            margin: 0 3em;
+        }
+    }
+}
+
+.Comment_Container {
+    max-width: 70%;
+    display: flex;
+    padding: 20px 0px;
+    img {
+        margin: 5px 20px 0 0;
+        object-fit: contain;
+        align-self: flex-start;
+    }
+    .Content {
+        flex: 1 1 auto;
+    }
+    a {
+        color: black;
+        text-decoration: none;
+        font-weight: 600;
+
+        span {
+            margin: 0 1em;
+        }
+    }
+    a:hover {
+        color: #b0c364;
+    }
+
+    p {
+        color: $second_color;
+    }
+}
+
+
+// ======= Media Query ======= 
+
+@media only screen and (max-width: 724px) {
+    .Comment_Container {
+        max-width: 100%;
+    }
+}
