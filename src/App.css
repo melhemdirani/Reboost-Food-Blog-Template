@@ -3,3 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.Parent {
+    margin: 0 auto;
+    background-color: bisque;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 2em;
+    background-color: aqua;
+}

@@ -1,0 +1,66 @@
+@import "../../assets/styles/_global.scss";
+
+.SearchArea {
+    background-image: url(https://preview.colorlib.com/theme/bueno/img/core-img/xpattern.png.pagespeed.ic.ijBkbx9gqi.webp);
+
+    section {
+        max-width: $max-width;
+        padding: 3em 2em;
+        margin-bottom: $margin-bottom;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2em;
+
+        input {
+            flex: 1;
+            padding: 1em 3em;
+            outline: none;
+            border: none;
+            height: 50px;
+        }
+
+        input[type="text"] {
+            color: #7a7a7a;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        input[type="submit"] {
+            background-color: $primary-color;
+            color: white;
+        }
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .SearchArea {
+        section {
+            padding: 5em 2em;
+        }
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+    .SearchArea {
+        section {
+            max-width: 992px;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .SearchArea {
+        section {
+            max-width: 768px;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .SearchArea {
+        section {
+            max-width: 100%;
+        }
+    }
+}
