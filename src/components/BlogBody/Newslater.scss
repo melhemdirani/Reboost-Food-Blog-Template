@@ -1,0 +1,45 @@
+@import "../../assets/styles/_global.scss";
+
+.Newslater {
+    max-width: 100%;
+    background-color: #eaeff1;
+    padding: 30px;
+
+    h6 {
+        font-size: 16px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    input {
+        width: 100%;
+        min-height: 50px;
+        border: 1px solid #dadfe5;
+        font-weight: 600;
+        padding: 0 20px;
+    }
+
+    input[type="email"] {
+        border-bottom: 2px solid $primary-color;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-size: 12px;
+        outline: none;
+    }
+
+    input[type="submit"] {
+        background-color: $primary-color;
+        font-size: 15px;
+        color: white;
+    }
+
+    p {
+        font-style: italic;
+        margin-top: 15px;
+        font-size: 11px;
+        margin-bottom: 0px;
+        color: $second-color;
+        font-weight: 500;
+    }
+}

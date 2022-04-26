@@ -1,0 +1,32 @@
+@import "../../assets/styles/_global.scss";
+
+.NameCard {
+    max-width: 100%;
+    min-height: 100px;
+    margin-bottom: 2em;
+
+    section:nth-child(1) {
+        background-image: url(https://preview.colorlib.com/theme/bueno/img/core-img/xpattern.png.pagespeed.ic.ijBkbx9gqi.webp);
+        padding: 0 2.3em;
+        padding-bottom: 0.7em;
+
+        img {
+            max-width: 100%;
+            margin: 2em 0;
+            border-radius: 50%;
+        }
+
+        p {
+            color: $second-color;
+            text-align: center;
+        }
+    }
+
+    section:nth-child(2) {
+        @include flex-center(xy, center, center);
+        gap: 2em;
+        background-color: $primary-color;
+        min-height: 3em;
+        color: white;
+    }
+}

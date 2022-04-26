@@ -7,7 +7,7 @@ import img9 from '../../assets/images/blogf9.jpg'
 import img11 from '../../assets/images/f1.jpg'
 
 export const Data = [
-    {
+    {   id: 1,
         tag: 'the best',
         title: 'Friends egg with ham',
         date: 'july 11, 2018 / BY Julia Stiles',
@@ -15,6 +15,7 @@ export const Data = [
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique justo id elit bibendum pharetra non vitae lectus. Mauris libero felis, dapibus a ultrices sed, commodo vitae odio. Sed auctor tellus quis arcu tempus.'
     },
     {
+        id: 2,
         tag: 'the best',
         title: 'Mushrooms with pork chop',
         date: 'july 11, 2018 / BY Julia Stiles',
@@ -22,6 +23,7 @@ export const Data = [
         description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc tristique justo id elit bibendum pharetra non vitae lectus. Mauris libero felis, dapibus a ultrices sed, commodo vitae odio. Sed auctor tellus quis arcu tempus.'
     },
     {
+        id: 3,
         tag: 'the best',
         title: 'Birthday cake with chocolate',
         date: 'july 11, 2018 / BY Julia Stiles',

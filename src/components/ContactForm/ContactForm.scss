@@ -1,13 +1,14 @@
 @import "../../assets/styles/global.scss";
 
-.Blog-Message-Container {
+.Contact-Form-Container {
     max-width: 100%;
+    text-align: left;
 
     .message-inner-section {
         width: 75%;
 
         h3 {
-            padding: 10px 0px;
+            padding: 10px 0;
             margin: 5px 10px;
         }
 
@@ -79,7 +80,7 @@
 
 @media only screen and (max-width: 550px) {
     .form {
-        max-width: 100%;
+        width: 100%;
         display: flex;
         justify-content: center;
     }
@@ -87,6 +88,7 @@
     .message-inner-section {
         width: 100% !important;
     }
+
 }
 
 @media only screen and (max-width: 336px) {

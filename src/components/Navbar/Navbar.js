@@ -1,11 +1,23 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { ImTwitter, ImDribbble, ImBehance, ImLinkedin2, ImFacebook, ImSearch, ImMenu } from 'react-icons/im'
 import { BsPinterest, FaSearch } from 'react-icons/bs';
 import './Navbar.styles.scss';
+import Sidebar from '../Sidebar/Sidebar';
+
+export const UseSidebarContext = React.createContext();
 
 export default function Navbar() {
+
+    const [sideMenu, setSideMenu] = useState(false);
+
     return (
         <div className='Navbar_Container'>
+            <UseSidebarContext.Provider value={[sideMenu, setSideMenu]}>
+                {
+                    sideMenu && <Sidebar />
+                }
+            </UseSidebarContext.Provider>
+
             <div className='header'>
 
                 {/* Navbar Icons */}
@@ -38,27 +50,29 @@ export default function Navbar() {
 
                 {/* Navbar */}
                 <div className='navbar'>
-                    <ul>
-                        <div>
-                            <li id="menu" ><a href='#none'><ImMenu /></a></li>
-                        </div>
-                        <div>
-                            <li id="home" ><a href="#home">Home</a></li>
-                            <li><a href="#aboutus">About Us</a></li>
-                            <li><a href="#pages">Pages</a>
-                                <div className="dropdown-menu">
-                                    <ul>
-                                        <li><a href="/">Page 1</a></li>
-                                        <li><a href="/">Page 2</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                            <li><a href="#recipes">Recipes</a></li>
-                            <li><a href="/blog">Blog</a></li>
-                            <li><a href="/contact">Contact</a></li>
-                            <li id="login" ><a href="#Login/Register">Login/Register</a></li>
-                        </div>
-                    </ul>
+                    <div className="nav-container">
+                        <ul>
+                            <div>
+                                <li id="menu" onClick={()=>setSideMenu(!sideMenu)}><a href='#none'><ImMenu /></a></li>
+                            </div>
+                            <div>
+                                <li id="home" ><a href="#home">Home</a></li>
+                                <li><a href="#aboutus">About Us</a></li>
+                                <li><a href="#pages">Pages</a>
+                                    <div className="dropdown-menu">
+                                        <ul>
+                                            <li><a href="/">Page 1</a></li>
+                                            <li><a href="/">Page 2</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="#recipes">Recipes</a></li>
+                                <li><a href="/blog">Blog</a></li>
+                                <li><a href="/contact">Contact</a></li>
+                                <li id="login" ><a href="#Login/Register">Login/Register</a></li>
+                            </div>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </div>

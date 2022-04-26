@@ -1,0 +1,47 @@
+@import "../../assets/styles/_global.scss";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+.Main-Body {
+    max-width: 100%;
+    text-align: left;
+
+    section:nth-child(1) {
+        img {
+            width: 100%;
+        }
+    }
+
+    section:nth-child(2) {
+        margin: 3rem 0;
+        display: flex;
+        flex-direction: column;
+        font-family: 'Montserrat', sans-serif;
+
+        span:nth-child(1) {     // Title
+            color: $primary_color;
+            text-transform: uppercase;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        span:nth-child(2) {     // Heading
+            line-height: 2.3em;
+            font-size: 1.7em;
+            font-weight: 600;
+        }
+
+        span:nth-child(3) {     // Time
+            text-transform: uppercase;
+            font-size: 0.8em;
+            font-weight: bold;
+            color: $second_color;
+        }
+    }
+
+    section:nth-child(3) {
+        p {
+            color: $second_color;
+            text-align: justify;
+        }
+    }
+}
